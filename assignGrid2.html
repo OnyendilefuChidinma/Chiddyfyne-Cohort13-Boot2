@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENT GRID 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+
+        body{
+            padding: 48px 0 64px;
+        }
+
+        h1{
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .header, .footer{
+            background: linear-gradient(97deg, #7156D9 -22.55%, #7D64DC 47.66%, rgb(176, 164, 229) 111.99%);
+        }
+
+        .side-bar{
+            background: linear-gradient(95deg, #2BA29C -8.15%, #3AD1CC 45.68%,  rgb(10, 210, 210) 109.09%); 
+        }
+
+        .cont-1, .cont-2{
+            background: linear-gradient(101deg, #7D64DC 11.13%, #2F98F4 51.96%, #2F98F4 89%, rgb(10, 210, 210) 101.68%);
+            min-width: 200px;
+        }
+
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Bootstrap 5 GRID Assignment 2</h1>
+
+    <div class="container rounded-3 p-5 text-center bg-dark d-flex flex-column gap-4 fs-4 fw-bold text-light">
+
+        <div class="row first">
+            <div class="col-12 border border-5 border-black rounded-3 p-4 header">HEADER</div>
+        </div>
+
+        <div class="row d-flex justify-content-between gap-4 second" style="min-height: 240px;">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 border border-5 border-black rounded-3 d-flex justify-content-center align-items-center side-bar" style="min-height: 64px;">SIDE BAR</div>
+            
+            <div class="col d-flex flex-column gap-4 p-0">
+
+                <div class="col">
+                    <div class="col border border-5 border-black rounded-3 py-5 d-flex justify-content-center align-items-center cont-1" style="min-height: 160px;"> CONTENT-1</div>
+                </div>
+
+                <div class="col d-flex flex-wrap gap-4">
+
+                    <div class="col border border-5 border-black rounded-3 py-5 d-flex justify-content-center align-items-center cont-2" style="min-height: 160px;"> CONTENT-2</div>
+
+                    <div class="col border border-5 border-black rounded-3 py-5 d-flex justify-content-center align-items-center cont-2" style="min-height: 160px;"> CONTENT-3</div>
+                </div>  
+
+            </div>
+           
+        </div>
+
+        <div class="row last">
+            <div class="col-12 border border-5 border-black rounded-3 p-4 d-flex align-items-center justify-content-center footer" style="min-height: 90px;" >FOOTER</div>
+        </div>
+
+    </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
